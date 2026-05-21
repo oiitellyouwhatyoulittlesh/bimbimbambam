@@ -1,0 +1,29 @@
+html {
+    font-size: 10px;
+}
+
+.parent {
+    width: 80%;
+    font-size: 20px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+.child1 {
+    width: 50%;
+    background-color: lightcoral;
+    border: 2px solid black;
+    font-size: 1em;
+}
+
+.child2 {
+    width: 50vw;
+    background-color: lightblue;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 2vw;
+}

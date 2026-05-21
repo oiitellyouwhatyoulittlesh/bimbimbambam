@@ -1,0 +1,86 @@
+/* ========== global resets ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* ========== layout ========== */
+  header {
+    background-color: #f4f4f4;
+    height: 100vh;  /* fills the full height of mobile screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  .container {  /* controls the width of all content */
+    width: 80%;
+    max-width: 900px;    /* stops content stretching too wide */
+    margin: 0 auto;
+  }
+  
+  .row {    /* parent flexbox for mobile view stacking */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ========== color themes ========== */
+  .white {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .white h2 {
+    color: #111111;  
+  }
+  
+  .black {
+    background-color: #111111;
+    color: #ffffff;
+  }
+  
+  /* ========== footer style ========== */
+  footer {
+    padding: 20px;
+    background-color: #222222;
+    color: #ffffff;
+  }
+  
+  footer a {
+    color: #00bcd4;
+  }
+  
+  /* ========== media query for large screens ========== */
+  @media (min-width: 768px) {
+    header {
+      height: 30vh;
+    }
+  
+    .row {
+      flex-direction: row;
+      align-items: center; /* vertically aligns text with images */
+    }
+  
+    /* Swaps text and image order on the 4th section to keep design rhythm */
+    .row.reverse {
+      flex-direction: row-reverse;
+    }
+  
+    .col {
+      flex: 1; /* gives both .col children equal width */
+    }
+  }
+  

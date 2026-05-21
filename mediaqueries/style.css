@@ -1,0 +1,35 @@
+/* Mobile (starts as blue) */
+body {
+    background-color: blue;
+    color: white; /* Making text readable on blue */
+}
+
+/* Hide the image by default */
+.responsive-image {
+    display: none;
+}
+
+/* Tablet: 600px and up (turns gray) */
+@media (min-width: 600px) {
+    body {
+        background-color: gray;
+    }
+
+    /* Show the image only in this range */
+    .responsive-image {
+        display: block;
+    }
+}
+
+/* Desktop: 900px and up (turns white) */
+@media (min-width: 900px) {
+    body {
+        background-color: white;
+        color: black; /* Making text readable on white */
+    }
+
+    /* Hide the image again once we hit 900px */
+    .responsive-image {
+        display: none;
+    }
+}

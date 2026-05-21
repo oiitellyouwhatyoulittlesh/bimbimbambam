@@ -1,0 +1,251 @@
+/* RESET / GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: #2E323F;
+    padding: 1em 0;
+}
+
+.logo {
+    margin-bottom: 1em;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.signup {
+    background-color: #A59678;
+    color: white;
+    padding: 0.3em 1em;
+    border-radius: 15px;
+}
+
+/* HERO SECTION */
+
+header {
+    background-color: #3B4050;
+    padding: 4em 0;
+}
+
+header h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+    color: white;
+}
+
+header span {
+    color: #A59678;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 1.5rem;
+    margin: 2em 0;
+    line-height: 1.5;
+}
+
+header button {
+    background-color: #A59678;
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 100px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header button:hover {
+    opacity: 0.9;
+}
+
+/* COLUMN SECTION */
+
+.light-gray {
+    background-color: #f1f1f1;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.col {
+    margin-bottom: 3em;
+}
+
+.col h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.875rem;
+    color: #A59678;
+    margin-bottom: 0.5em;
+}
+
+.col p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: black;
+}
+
+/* MAIN SECTION */
+
+.white {
+    background-color: white;
+    padding: 4em 0;
+}
+
+article h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.25rem;
+    color: #A59678;
+    margin-bottom: 0.5em;
+}
+
+article p {
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    margin: 1.5em 0;
+}
+
+aside {
+    margin-top: 3em;
+}
+
+.dark-block {
+    background-color: #3B4050;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.dark-block h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.875rem;
+    margin-bottom: 0.5em;
+}
+
+.dark-block p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+/* TABLET VIEW */
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .medium {
+        display: flex;
+        gap: 2em;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .nav-links {
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .col {
+        margin-bottom: 0;
+    }
+
+    .aside-boxes {
+        margin-top: 3em;
+    }
+
+    .dark-block {
+        margin-bottom: 0;
+    }
+
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 75%;
+        max-width: 1200px;
+    }
+
+    .large {
+        display: flex;
+        gap: 4em;
+    }
+
+    .bottom {
+        align-items: flex-end;
+    }
+
+    .hero-heading {
+        width: 40%;
+        max-width: 500px;
+    }
+
+    .hero-text {
+        width: 50%;
+        max-width: 600px;
+    }
+
+    header h1 {
+        font-size: 5.625rem;
+    }
+
+    article {
+        width: 65%;
+    }
+
+    aside {
+        width: 35%;
+        margin-top: 0;
+    }
+
+    .aside-boxes {
+        flex-direction: column;
+    }
+
+}

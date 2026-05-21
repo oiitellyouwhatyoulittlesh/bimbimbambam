@@ -1,0 +1,76 @@
+/* Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(242, 141, 190);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header Styling */
+.main-header {
+    background-color: rgb(242, 141, 190);
+    padding: 2.5rem 1rem;
+}
+
+.main-header h1 {
+    font-family: 'Rammetto One', cursive;
+    color: #ffffff;
+    font-size: clamp(2rem, 8vw, 5rem); 
+}
+
+/* Responsive Image Handling */
+.img-box {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.fluid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content Container */
+.content {
+    padding: 3rem 1.5rem;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Specific styling for spans */
+.highlight {
+    font-family: 'Rammetto One', cursive;
+}
+
+/* Button Styling */
+.btn-order {
+    background-color: rgb(111, 212, 224);
+    color: #ffffff;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-order:active {
+    transform: scale(0.95);
+}
