@@ -1,0 +1,95 @@
+/* Keyword colors can be found at http://colours.neilorangepeel.com/ */
+
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+/* Add padding to all of the .container child elements */
+.container > * {
+  padding: 20px;
+}
+
+.container {
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  
+  /* Small Screen */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "sidebar"
+    "footer";
+}
+
+/* Assign Grid Areas to HTML Elements */
+header {
+  background: skyblue;
+  grid-area: header;
+}
+nav {
+  background: cadetblue;
+  grid-area: nav;
+}
+main {
+  background: slategray;
+  grid-area: main;
+}
+aside {
+  background: seagreen;
+  grid-area: sidebar;
+}
+footer {
+  background: darkslateblue;
+  grid-area: footer;
+}
+
+/* --- Media Queries --- */
+
+/* Medium Screen Layout */
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "header  header"
+      "nav     main"
+      "sidebar sidebar"
+      "footer  footer";
+  }
+}
+
+/* Large Screen Layout */
+@media (min-width: 850px) {
+  .container {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "header  header  header"
+      "nav     main    sidebar"
+      "footer  footer  footer";
+  }
+}
+
+/* Wide Screen Layout */
+@media (min-width: 1001px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
